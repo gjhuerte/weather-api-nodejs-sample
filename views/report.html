@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Openweathermap API</title>
+    </head>
+
+    <body>
+        <div style="color:rgb(80,0,80);font-family:arial,helvetica,sans-serif;font-size:12.8px" dir="auto">
+            <span style="font-weight:700;color:rgb(80,80,80);font-family:'roboto',sans-serif;font-size:14px">
+                <a 
+                    href="https://openweathermap.org/city/2643743" 
+                    style="text-decoration-line:none;color:rgb(233,110,80);background-image:initial;background-position:0px 0px;background-size:initial;background-repeat:initial;background-origin:initial;background-clip:initial" 
+                    target="_blank" 
+                    data-saferedirecturl="https://www.google.com/url?q=https://openweathermap.org/city/2643743&amp;source=gmail&amp;ust=1580014339624000&amp;usg=AFQjCNGdabOiS3NJYIRkr8f6qY0GAA4Cpw">
+                    {{ locationName }}, {{ locationCode }}
+                </a>
+            </span>
+            <span 
+                style="color:rgb(80,80,80);font-family:'roboto',sans-serif;font-size:14px">&nbsp;</span>
+            <img 
+                src="{{ locationIcon }}" 
+                style="border:0px;vertical-align:middle;color:rgb(80,80,80);font-family:'roboto',sans-serif;font-size:14px" class="CToWUd">
+            <span style="font-weight:700;color:rgb(80,80,80);font-family:'roboto',sans-serif;font-size:14px">
+                <i>&nbsp;{{ weatherType }}</i>
+            </span>
+            <p style="margin:0px 0px 10px;color:rgb(80,80,80);font-family:'roboto',sans-serif;font-size:14px">
+                <span style="display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:700;color:rgb(255,255,255);line-height:1;vertical-align:baseline;white-space:nowrap;text-align:center;background-color:rgb(78,77,74);border-radius:10px">
+                    6 &#x2103
+                </span>
+                &nbsp;temperature from {{ temperatureMinimum }} to {{ temperatureMaximum }} &#x2103, wind {{ windSpeed }} m/s. clouds {{ clouds }} %, {{ hpa }} hpa
+            </p>
+            <p style="margin:0px 0px 10px;color:rgb(80,80,80);font-family:'roboto',sans-serif;font-size:14px">
+                Geo coords&nbsp;
+                <a 
+                    href="https://openweathermap.org/weathermap?zoom=12&amp;lat=51.5085&amp;lon=-0.1258" style="text-decoration-line:none;color:rgb(233,110,80);background-image:initial;background-position:0px 0px;background-size:initial;background-repeat:initial;background-origin:initial;background-clip:initial" 
+                    target="_blank" 
+                    data-saferedirecturl="https://www.google.com/url?q=https://openweathermap.org/weathermap?zoom%3D12%26lat%3D51.5085%26lon%3D-0.1258&amp;source=gmail&amp;ust=1580014339624000&amp;usg=AFQjCNGeiWCLqfum538EsTy9_wJcgZPLDw">
+                    [{{ latitude }}, {{ longitude }}]
+                </a>
+            </p>
+        </div>
+    </body>
+</html>  
